@@ -14,4 +14,4 @@ jobs:
         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - name: Run API tests
         run: |
-          postman collection run "34014692-2fe9fec4-627c-4786-92d0-74e7d6a997ff" --env-var "bns_token"=${{ secrets.bns_token }}
+          postman collection run "34014692-2fe9fec4-627c-4786-92d0-74e7d6a997ff" --env-var "bns_token"=${{ secrets.BNS_TOKEN }}
